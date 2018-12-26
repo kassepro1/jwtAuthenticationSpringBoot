@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="col-md-6 col-lg-offset-3">
+    <div class="alert alert-danger" >
+      <strong> Bad Credentials ...</strong>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel panel-heading">Add New Task</div>
+      <div class="panel panel-body">
+        <form #f="ngForm" (ngSubmit)="onAddNewTask(f.value)">
+          <div class="form-group">
+            <label class="control-label">Taskname:</label>
+            <input class="form-control" ngModel="" type="text" name="taskName" required/>
+          </div>
+
+          <button type="submit" class="btn btn-danger"  >New Task </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</div>

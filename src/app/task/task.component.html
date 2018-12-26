@@ -1,0 +1,15 @@
+<div class="container">
+  <p></p>
+  <button class="btn btn-danger" (click)="onNewTask()" >New Task</button>
+  <p></p>
+<table class="table table-striped">
+<tr>
+  <th>ID</th>
+  <th>Task Name</th>
+</tr>
+  <tr *ngFor=" let t of tasks">
+    <th>{{t.id}}</th>
+    <th>{{t.taskName}}</th>
+  </tr>
+</table>
+</div>
